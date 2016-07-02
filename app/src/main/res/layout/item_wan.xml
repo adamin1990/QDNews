@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-atuo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.balysv.materialripple.MaterialRippleLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="250dp"
+        android:id="@+id/image"/>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/text"/>
+
+</android.support.v7.widget.CardView>
+

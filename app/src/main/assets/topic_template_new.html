@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,height=device-height,initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi"/>
+    <title></title>
+    <style type="text/css">
+        html {
+            font-size: 86%;
+            font-family: "Microsoft YaHei", Helvetica;
+            background: #f9f9f9;
+        }
+
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, button, textarea, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            line-height: 1.333;
+            font-size: 12px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 100%
+        }
+
+        input, textarea, select, button {
+            font-weight: normal;
+            font-family: inherit;
+            font-size: 100%;
+        }
+
+        input[type="button"], input[type="submit"], select, button {
+            cursor: pointer
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        address, caption, cite, code, dfn, em, th, var {
+            font-style: normal;
+            font-weight: normal
+        }
+
+        li {
+            list-style: none
+        }
+
+        caption, th {
+            text-align: left
+        }
+
+        q:before, q:after {
+            content: ''
+        }
+
+        abbr, acronym {
+            border: 0;
+            font-variant: normal
+        }
+
+        sup {
+            vertical-align: text-top
+        }
+
+        sub {
+            vertical-align: text-bottom
+        }
+
+        fieldset, img, a img, iframe {
+            border-width: 0;
+            border-style: none
+        }
+
+        iframe {
+            overflow: hidden
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic
+        }
+
+        textarea {
+            resize: vertical;
+            overflow-y: auto;
+        }
+
+        legend {
+            color: #000
+        }
+
+        a {
+            text-decoration: none;
+            color: #333333;
+        }
+
+        a:hover {
+            color: #044041;
+        }
+
+        hr {
+            height: 0
+        }
+
+        label {
+            cursor: pointer
+        }
+
+        .br5 {
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            display: block
+        }
+
+        .cRed, a.cRed, a.cRed:visited, .cRed a {
+            color: #bb2323;
+        }
+
+        .cDGray, a.cDGray, a.cDGray:visited, .cDGray a {
+            color: #666666;
+        }
+
+        .cWhite, a.cWhite, a.cWhite:visited {
+            color: #ffffff;
+        }
+
+        .cBlack, a.cBlack, a.cBlack:visited {
+            color: #000000;
+        }
+
+        .cGreen, a.cGreen, a.cGreen:visited {
+            color: #7cbe05;
+        }
+
+        .cYellow, a.cYellow, a.cYellow:visited, .cYellow a {
+            color: #ff6600;
+        }
+
+        .fb {
+            font-weight: bold;
+        }
+
+        .fb a {
+            font-weight: bold;
+        }
+
+        .fr {
+            text-align: right;
+        }
+
+        .fc {
+            text-align: center;
+        }
+
+        .invisible {
+            visibility: hidden;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .z {
+            float: left;
+        }
+
+        .y {
+            float: right;
+        }
+
+        .f12 {
+            font-size: 0.8em;
+        }
+
+        .btn {
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+
+        button.btn {
+            background: #ff9a24;
+            color: #fff;
+            border: none;
+            text-shadow: 1px 1px 1px #e37c13;
+        }
+
+        .btn_reg {
+            background: #97cd31;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            border: none;
+            margin-top: 1em;
+            line-height: 2.5em;
+            height: 2.5em;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #999;
+            font-size: 0.8em;
+            line-height: 1.8em;
+        }
+
+        :-moz-placeholder {
+            color: #999;
+            font-size: 0.8em;
+            line-height: 1.8em;
+        }
+
+        ::-moz-placeholder {
+            color: #999;
+            font-size: 0.8em;
+            line-height: 1.8em;
+        }
+
+        :-ms-input-placeholder {
+            color: #999;
+            font-size: 0.8em;
+            line-height: 1.8em;
+        }
+
+        h1 {
+            font-size: 1.2em;
+            line-height: 1.5em;
+            padding: 1em;
+        }
+
+        .s_author {
+            background: #e8e8e8;
+            border-top: 1px solid #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
+            margin: 1em 0;
+            line-height: 1.6em;
+            font-size: 0.9em;
+        }
+
+        .s_author_s {
+            border: 1px solid #fff;
+            padding: 0.8em 1em;
+        }
+
+        .s_author .z {
+            padding-right: 1em;
+        }
+
+        .s_con {
+            padding: 0 1em;
+            line-height: 1.8em;
+            color: #131313;
+
+        font-size: {
+
+        {
+            font-size
+        }
+        }
+        em
+
+        ;
+        }
+        .s_con img {
+            max-width: 100%;
+        }
+
+        .s_con blockquote {
+            background: none repeat scroll 0 0 #fff;
+            border: 1px solid #e8e8e8;
+            margin: 5px 10px;
+            padding: 5px 8px;
+        }
+
+        .p_box {
+            margin-top: 1em;
+        }
+
+        .p_box .s_con {
+            padding: 1em;
+        }
+
+        .s_tit {
+            background: #e8e8e8;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            border-top: 1px solid #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
+            line-height: 2em;
+            padding-left: 1em;
+        }
+
+        .s_tit::after {
+            content: "";
+            border-top: 1px solid #fff;
+            display: block;
+            margin-left: -1em;
+        }
+
+        .s_tit::before {
+            content: "";
+            border-bottom: 1px solid #fff;
+            display: block;
+            margin-left: -1em;
+        }
+
+        .s_tit .cGreen {
+            padding: 0 1em;
+        }
+
+        .s_date {
+            text-align: right;
+            color: #6f6f6f;
+            padding-right: 1em;
+            font-size: 0.8em;
+        }
+
+        .btn_follow {
+            background: #ffb900;
+            border: none;
+            color: #fff;
+            font-size: 0.8em;
+            vertical-align: middle;
+            padding: 3px 5px;
+        }
+
+        .ico_post, .ico_msg {
+            width: 20px;
+            height: 20px;
+            text-indent: -999em;
+            overflow: hidden;
+            display: inline-block;
+            padding: 5px 10px;
+            vertical-align: middle;
+            float: right;
+        }
+
+        .ico_post {
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAwFBMVEX///+goKCJiYna2trV1dWYmJi6urqUlJSFhYXAwMDCwsLGxsaenp6bm5uoqKiSkpKPj4/JycnExMSqqqqkpKSLi4u+vr68vLy4uLi1tbWxsbGtra2MjIyAgICBgYHd3d3h4eG3t7enp6eHh4eWlpaCgoJ/f3/X19fKysqzs7Pc3NzLy8vi4uKRkZHe3t7Q0NDZ2dnY2NjR0dHg4ODS0tK2tracnJzf39+Dg4Ourq6mpqaGhoaysrLPz8/W1tbNzc0+0atqAAAAAXRSTlMAQObYZgAAAc1JREFUeNq11GlzqjAUBuDDJmgVsILa6okLhF5Wd8Wl7f//VxeRML0tgX657wzDITwTJnMSAOrScown+EXaImIqbBrdXMDLAnF6ZgNS+KdMv/9ZwlFqvkdbAanayZ/1WHS+xGBudkT/fuvE6AgBwFJDx1VdFlVg8EVT1nkhH67Yhe0VX1cfb3k22fWxLtzG9ezz7FEPkUKLmkHlUs40W7MyzOsJseCFWPMqJ09x/KxgegkBPul1DwuiV8ILHhOQfRvNRSjgADK4rIIrkeQ9CS+UGNSWuLCL1qloT4/gDXiwnzqrspGonrjQxQkbXSt0DDzYpmK5FVroAg/uYm/E6r2Rdrjw4JkJq32v6GkFPDmk3K6hKD5x4QjNiNUDtIALfe/Gyg6aIR9OkH15Z5EB8KGO70U1JMa+Bgqk2IZ7FV+hBh7Fx1oSgShBHXSVx3xHnPahDsbLfMGm12UbY6f0KmBk3w/fQdN8qTyQiFUzUnUr69j78jPhQA3VWDtL0Ah9QtzOPyMcGI0Oa/gN/Jn/BfVdIwzQgzHpRo1Q9ggMqbhtciefOPBmo9IOgtk9yex7kuyFtLoRomcnJPu7ceMh8bIbMe59eu6lWG+ngzn8BTcNRm4WkB3pAAAAAElFTkSuQmCC) center center no-repeat;
+            background-size: 20px 20px;
+            -moz-background-size: 20px 20px;
+            -webkit-background-size: 20px 20px;
+        }
+
+        .ico_msg {
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAwFBMVEX////MzMyCgoKUlJTh4eGcnJympqaPj4+xsbHExMTCwsLb29u4uLiWlpakpKTOzs7Gxsa8vLyhoaGRkZGQkJCurq6ioqKJiYm0tLSZmZmAgICBgYF/f3+Hh4fd3d2tra2Li4vT09O7u7vZ2dnf39+NjY2GhobU1NTQ0NCMjIzLy8uFhYW3t7fIyMjJycnR0dGsrKzBwcHi4uKoqKjY2NjAwMC6urq2traampqEhISrq6ufn5/e3t7KysrW1ta+vr6rimNwAAAAAXRSTlMAQObYZgAAAe1JREFUeNq9lFtT4kAQhZtABBQQyKLr6Q6GAOESolxVVt39//9qe8aq3arNTNwnp6gKDyeT7u90H6KvOotaf/G5aty6BVj4dVmta+csgP6AbZUuVVG02fXTO1W++nUPwHnw8fdxBbR8ukYGvv5T7Ar86BFeAM9Es2GGaE10DRzcujVQ15si0wlqRCGf3UL91oRoKHjpCesrT8DEpbsH7on6jC7RDUBUAIVDNwmw0kciwU+iOgJlCqk5hHXIO9EPsEK5tBBb4KuybgP0iJYsTe07RjAlavK8rJueEc+IIoaC7AEbooGt+d8TAjuiZzboHsCRYsqRj0u6E+NFrw04bhDNrSVD4Kmk06LOWtQdS5toJGZwCjGYSt6xdIh2glAxAQnRPuGgTLuAGO9i5IqjzlIYTOKYnbn1rsemqI7gRjEJN13e8cjOol47zRG/EX1zmbJPxHrH0JUKhU8Gk1w4zJsddPq2dqDVO8V0DGAwOc+SoX41PrzThWn7tqDLsjSYoJh+VexVKsa7Gpt+lH525RPeIt7ruIjFBHOtb01Zt+otNOPybjH5994miGkhAfuTpwMs/tJv+RNibSfVBoTF5D8Zsqll34Ssq4QDSJwej4M5y6E67g4aDmwSovtZgKaxjcXtfyTy5ffRafxF6f8be7wzfzm6Os0AAAAASUVORK5CYII=) center center no-repeat;
+            background-size: 20px 20px;
+            -moz-background-size: 20px 20px;
+            -webkit-background-size: 20px 20px;
+            padding-right: 1em;
+        }
+
+        .page {
+            border-top: 1px solid #cbcbcb;
+            margin: 1em;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        .page_pre, .page_next {
+            padding: 0 0.5em;
+        }
+
+        .page_b {
+            background: #e6e6e6;
+            display: inline-block;
+            padding: 0.5em;
+        }
+
+        .page_b input {
+            background: #fff;
+            text-align: center;
+            width: 4em;
+            vertical-align: middle;
+        }
+
+        .btn_page {
+            border: none;
+            background-color: transparent;
+            padding: 0 0.5em;
+            vertical-align: middle;
+        }</style>
+</head>
+<script type="text/javascript">
+    function sendmsg(toUser) {
+        window.demo.sendmsg(toUser);
+    }
+    function reply(toUser) {
+        window.demo.reply(toUser);
+    }
+    function next() {
+        window.demo.next();
+    }
+    function prev() {
+        window.demo.prev();
+    }
+    function jump() {
+        page = document.getElementById("pagenum").value;
+        window.demo.jump(page);
+    }
+    function userinfo(uid) {
+        window.demo.userinfo(uid);
+    }
+</script>
+<body>
+<div class="show">
+    <h1>{{master.title}}</h1>
+    <div class="s_author">
+        <div class="s_author_s"><span class="z"><img src="{{master.face}}"/></span>
+            <p><span href="#" class="cGreen" onclick="javascript:userinfo('{{master.uid}}')">楼主：{{master.master}}</span>
+            </p>
+            <p class="cDGray"><span class="y">{{master.state}}</span>{{master.create_at}}</p>
+        </div>
+    </div>
+    <div class="s_con">
+        {{master.main}}
+    </div>
+    {{html.posts}}
+    <div class="page">
+        <span class="page_next" onclick="javascript:prev()">上一页</span>
+		<span class="page_b br5"><input id="pagenum" type="number" placeholder="{{page}}/{{page_total}}" class="br5"/>
+		<button class="btn_page" onclick="javascript:jump()">跳页</button></span>
+        <span class="page_next" onclick="javascript:next()">下一页</span>
+    </div>
+</div>
+</body>
+</html>

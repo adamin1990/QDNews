@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_nest_vp"
+    android:layout_marginTop="2dp"
+    android:layout_height="150dp"
+    android:layout_width="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/header"
+        android:layout_height="150dp"
+        android:layout_width="match_parent"></android.support.v4.view.ViewPager>
+
+    <adamin90.com.qqd.view.LinePageIndicator xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/indicator"
+        android:layout_gravity="bottom"
+        android:layout_height="5dp"
+        android:layout_width="match_parent"
+        app:centered="true"
+        app:selectedColor="@color/colorAccent"
+        app:strokeWidth="2dp" />
+</FrameLayout>

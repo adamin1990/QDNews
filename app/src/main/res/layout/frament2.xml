@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <adamin90.com.qqd.view.CustomTab
+       android:id="@+id/tablayout"
+       android:layout_width="match_parent"
+       android:layout_height="?actionBarSize"
+       android:background="@color/colorPrimary"
+       app:tabMode="scrollable"
+       app:tabTextColor="@color/white"
+       app:tabSelectedTextColor="@color/whitegray"
+       app:tabGravity="center"></adamin90.com.qqd.view.CustomTab>
+<android.support.v4.view.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/viewpager"></android.support.v4.view.ViewPager>
+</LinearLayout>
